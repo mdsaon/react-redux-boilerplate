@@ -7,12 +7,14 @@ import Users from "./components/users";
 import UserList from "./components/users/UserList";
 import UserListsWithReselect from "./components/users/UserListsWithReselect";
 import SelectedUsersListsWithReselect from "./components/users/SelectedUsersListsWithReselect";
+import ItemsList from "./components/users/ItemsList";
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         <div className="App">
+          <ItemsList />
           <SelectedUsersListsWithReselect />
           <UserListsWithReselect />
           <Users />
